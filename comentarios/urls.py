@@ -1,0 +1,7 @@
+from rest_framework.routers import DefaultRouter
+
+from comentarios.views import ComentarioViewSet
+
+router = DefaultRouter()
+router.register(r'viewset/', ComentarioViewSet)
+urlpatterns = router.urls
